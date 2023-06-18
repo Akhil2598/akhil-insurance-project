@@ -5,5 +5,4 @@
   tasks : 
   - name: Deploying kubernetes pods
     command: kubectl create deployment insureme --image=docker.io/kondetimounika/insureme:1.0 --port=8081
-  - name: service
     command: kubectl expose deployment/insureme --port=8081 --target-port=8081 --type=NodePort
